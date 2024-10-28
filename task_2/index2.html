@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор паролей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 300px;
+            margin: auto;
+        }
+        label, button {
+            display: block;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        input[type="number"] {
+            font-size: 1rem;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .password {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            word-wrap: break-word;
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Генератор паролей</h1>
+        
+        <label>
+            Длина пароля:
+            <input type="number" id="lengthInput" min="4" max="30" value="12">
+        </label>
+
+        <label>
+            <input type="checkbox" id="includeLowercase" checked>
+            Строчные буквы
+        </label>
+        <label>
+            <input type="checkbox" id="includeUppercase" checked>
+            Прописные буквы
+        </label>
+        <label>
+            <input type="checkbox" id="includeNumbers" checked>
+            Цифры
+        </label>
+        <label>
+            <input type="checkbox" id="includeSymbols">
+            Специальные символы
+        </label>
+
+        <button onclick="generatePassword()">Сгенерировать</button>
+        
+        <div class="password" id="passwordOutput"></div>
+    </div>
+
+    <script src="task_2.js"></script>
+
+
+</body>
+</html>
