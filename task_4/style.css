@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 80%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:nth-child(1) { 
+    background-color: green;
+    color: white;
+}
+
+button:nth-child(2) { 
+    background-color: orange;
+    color: white;
+}
+
+button:nth-child(3) { 
+    background-color: red;
+    color: white;
+}
+
+button[type="submit"] { 
+    background-color: rgb(34, 113, 174);
+    color: black;
+}
+
+#bookContent {
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: left; 
+    white-space: pre-wrap;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: inline-block; 
+}
